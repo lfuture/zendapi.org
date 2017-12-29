@@ -40,7 +40,7 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../zendapidevel
 如果您的`PHP`没有安装在标准路径，假定您安装在`/usr/local/php-7.1.5`目录下，那么您可以使用下面的命令进行编译
 ```
 cd build-zendapi
-cmake -D﻿ZAPI_OPT_PHPCFG_PATH=/usr/local/php-7.1.5/bin/php-config ../zendapidevel
+cmake -DZAPI_OPT_PHPCFG_PATH=/usr/local/php-7.1.5/bin/php-config ../zendapidevel
 ```
 如果您想给编译器指定额外的选项参数，比如您想用`c++14`标准进行编译，您可以使用下面的命令进行编译
 ```
